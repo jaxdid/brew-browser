@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import BeerGrid from './components/BeerGrid'
+import BrewBrowser from './components/BrewBrowser'
 
 import './registerServiceWorker'
 
-ReactDOM.render(<BeerGrid />, document.getElementById('root'))
+ReactDOM.render(<BrewBrowser />, document.getElementById('root'))

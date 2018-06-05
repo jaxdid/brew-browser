@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class BeerGrid extends Component {
+export default class BrewBrowser extends Component {
   constructor () {
     super()
 
@@ -20,11 +20,8 @@ export default class BeerGrid extends Component {
   }
 
   render () {
-    return (
-      <div className="beer-grid">
-        <div>Beers on tap:</div>
-        <div>{this.state.beers.length || 'Loading...'}</div>
-      </div>
-    )
+    return this.state.beers.length
+      ? <div>Beers ready!</div>
+      : <div>Loading...</div>
   }
 }
