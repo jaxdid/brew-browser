@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import BeerList from './BeerList'
 
 export default class BrewBrowser extends Component {
   constructor () {
@@ -20,8 +21,10 @@ export default class BrewBrowser extends Component {
   }
 
   render () {
-    return this.state.beers.length
-      ? <div>Beers ready!</div>
+    const { beers } = this.state
+
+    return beers.length
+      ? <BeerList beers={beers} />
       : <div>Loading...</div>
   }
 }
