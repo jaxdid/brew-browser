@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import BeerListItem from './BeerListItem'
 
 export default function BeerList ({ beers }) {
   return (
     <div className="beer-list">
-      {beers.map(beer => <div key={beer.id}>{beer.name}</div>)}
+      {beers.map(beer => <BeerListItem key={beer.id} data={beer} />)}
     </div>
   )
 }
