@@ -11,5 +11,5 @@ export default function BeerList ({ beers }) {
 }
 
 BeerList.propTypes = {
-  beers: PropTypes.arrayOf(PropTypes.object)
+  beers: PropTypes.arrayOf(PropTypes.object).isRequired
 }
