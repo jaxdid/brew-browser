@@ -26,13 +26,11 @@ export default class BrewBrowser extends Component {
   }
 
   sortBeers () {
-    const { sortType } = this.state
     const beers = this.state.beers.sort((a, b) => {
-      if (sortType === 'name') {
-        return String(a[sortType]).localeCompare(b[sortType])
-      } else if (sortType === 'abv') {
-        return a[sortType] - b[sortType]
-      }
+      const { sortType } = this.state
+      return sortType === 'name'
+        ? String(a[sortType]).localeCompare(b[sortType])
+        : a[sortType] - b[sortType]
     })
 
     this.setState({beers})
