@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import BeerListItem from './BeerListItem'
+import BeerListItem from '../BeerListItem/BeerListItem'
+
+import './beerList.less'
 
 export default function BeerList ({ beers }) {
   return (

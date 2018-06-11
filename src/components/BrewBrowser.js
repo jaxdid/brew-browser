@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import BeerList from './BeerList'
+import BeerList from './BeerList/BeerList'
 
 export default class BrewBrowser extends Component {
   constructor () {
