@@ -7,7 +7,8 @@ export default function BeerListItem ({ data }) {
   const {
     image_url: imageUrl,
     name,
-    tagline
+    tagline,
+    description
   } = data
 
   return (
@@ -15,6 +16,7 @@ export default function BeerListItem ({ data }) {
       <div className="beer-image" style={{ backgroundImage: `url(${imageUrl})` }} />
       <h4>{name}</h4>
       <p>{tagline}</p>
+      <p>{description}</p>
     </div>
   )
 }
