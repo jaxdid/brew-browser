@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import BeerList from '../BeerList/BeerList'
 
+import './brewBrowser.less'
+
 export default class BrewBrowser extends Component {
   constructor () {
     super()
