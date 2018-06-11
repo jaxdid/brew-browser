@@ -9,7 +9,7 @@ export default class BrewBrowser extends Component {
 
     this.state = {
       beers: [],
-      sortType: 'name'
+      sortType: 'abv'
     }
 
     this.changeSortType = this.changeSortType.bind(this)
