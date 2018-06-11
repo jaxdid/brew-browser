@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import BrewBrowser from './components/BrewBrowser'
+import BrewBrowser from './components/BrewBrowser/BrewBrowser'
 
 import './registerServiceWorker'
 import '../public/index.less'
