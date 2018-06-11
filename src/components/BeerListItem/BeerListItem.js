@@ -20,7 +20,7 @@ export default function BeerListItem ({ data }) {
       </div>
       <div className="beer-image" style={{ backgroundImage: `url(${imageUrl})` }} />
       <h4>{name}</h4>
-      <p>{tagline}</p>
+      <p className="beer-tagline">{tagline}</p>
       <p>{description}</p>
     </div>
   )
