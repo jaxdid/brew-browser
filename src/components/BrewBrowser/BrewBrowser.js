@@ -50,8 +50,8 @@ export default class BrewBrowser extends Component {
           <h1 className="title">Brew Browser</h1>
           <div>
             Sort by:
-            <button onClick={this.changeSortType}>
-              {this.state.sortType}
+            <button className="sort-button" onClick={this.changeSortType}>
+              {this.state.sortType.toUpperCase()}
             </button>
           </div>
         </div>
