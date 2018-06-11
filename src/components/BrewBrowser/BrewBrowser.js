@@ -22,11 +22,20 @@ export default class BrewBrowser extends Component {
     return beers.json()
   }
 
-  render () {
-    const { beers } = this.state
+  renderBeers () {
+    return (
+      <div className="brew-browser">
+        <div className="side-bar">
+          <h1 className="title">Brew Browser</h1>
+        </div>
+        <BeerList beers={this.state.beers} />
+      </div>
+    )
+  }
 
-    return beers.length
-      ? <BeerList beers={beers} />
+  render () {
+    return this.state.beers.length
+      ? this.renderBeers()
       : <div className="loading">LOADING...</div>
   }
 }
